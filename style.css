@@ -1,0 +1,659 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Roboto:wght@300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Fjalla+One&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* font-family: 'Dancing Script';  font-family: 'Dancing Script' , Tahoma, Geneva, Verdana, sans-serif;  font-family: 'Roboto';  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+html {scroll-behavior: smooth;}
+
+.main-img {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1617516202907-ff75846e6667?q=80&w=1458&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* background-position: center; */
+}
+.box {
+    background-color: black;
+    opacity: 0.55;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+header {
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 4.5rem 0.3rem 4.5rem ;
+    position: sticky;
+    top: 0;
+    /* background-color: aquamarine; */
+}
+header .logo {
+    font-size: 2.35rem;
+    align-items: center;
+    display: flex;
+    gap: 0.2rem;
+    cursor: pointer;
+}
+.orange-txt {
+    font-family: 'Segoe UIt';
+    color: orange;
+}
+.logo-s {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+.logo-txt {
+    font-size: 2rem;
+    font-family: 'Dancing Script';
+    font-weight: 700;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding-right: 0.7rem;
+    margin-bottom: 0;
+}
+.nav-ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.67rem 0;
+    transition: ease-in-out 0.2s;
+    font-size: 0.97rem;
+
+}
+.nav-ul li a:hover {
+    border-bottom: solid orange 1px;
+    color: orange;
+    transition: ease-in-out 0.2s;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 1;
+    color: white;
+    top: 28%;
+    padding: 1rem;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+} 
+#org {font-family: 'Roboto';}
+.hero-section p {
+    font-weight: 300;
+    margin: 0.7rem 0 1.8rem 0;
+}
+.hero-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: orange;
+    border: solid orange 2px;
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+.hero-btn:hover {
+    background-color: transparent;
+    border: solid orange 2px;
+    transition: ease-in-out 0.2s;
+}
+
+.popular-places {
+    width: 86%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.this-h2 {
+    font-size: 1.8rem;
+    color: #000000c7;
+    font-weight: 800;
+}
+.cards {
+    padding: 2.5rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.card1 {
+    /* height: 21rem; */
+    width: 23rem;
+    background-color: white;
+}
+
+.card-img {
+    width: 368px;
+    height: 236.5px;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+.card-info {
+    padding: 0.5rem 0.9rem 0.9rem 0.9rem;
+}
+.card-info h2 {
+    font-size: 1.2rem;
+    color: #000000e3;
+    margin-bottom: 0.5rem;
+}
+.ss{font-size: 0.9rem; font-weight: 300; color: black; margin-bottom: 0.5rem;}
+.card-info h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.45px;
+    color: orange;
+}
+
+section {
+    background-color: #ffe4c433;
+}
+/* .card1:hover {
+    transform: rotate(180deg);
+} */
+
+.quotes {
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.quotes .img1 {
+    height: 150px;
+    width: 145px;
+}
+.quotes img{
+    height: 100%;
+    filter: grayscale(100%);
+    width: 100%;
+}
+@media (max-width:1025px) {
+    .images .gal-img {
+        height: 16rem;
+    }
+    #pro {
+        padding: 3rem 2rem;
+    } .tcardcontainer {
+        flex-wrap: wrap;
+    }
+    .tcardcontainer {
+        flex-wrap: nowrap;
+    } .team-card .photo {height: 220px;}
+    .tcardcontainer .team-card {width: 19rem;}
+}
+@media (max-width:950px) {
+    header{
+        flex-direction: column;
+        gap: 0.4rem;
+        align-items: center;
+        padding: 0.4rem;
+        /* justify-content: center; */
+    }
+    /* .quotes {
+        /* background-color: red; */
+    /* } */ */
+    .img1 {
+        height: 135px;
+    }
+    .hero-section {
+        top: 24%;
+    }
+    #org {display: block;}
+
+    .cards {
+        gap: 0.8rem;
+    }
+    .about-card {
+        flex-direction: column;
+    }
+    .about-txt h3 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .about-card .about-txt {
+        width: 82%;
+    }
+    .service-cards .dabba {
+        width: 21rem;
+    }
+    .ques .qcard {
+        flex-direction: column;
+    }   
+}
+
+@media (max-width:825px) {
+    .dp .dabba {width: 28rem;}
+    .remo {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .hero-section h1 {font-size: 3.2rem;}
+    .hero-section .hero-btn {
+        font-size: 1rem;
+        padding: .6rem 1.4rem;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .nun {
+        display: none;
+    }    
+    .about-card .about-txt h3 {font-size: 1.3rem;}
+    .about-card .about-img {
+        height: 370px;
+        width: 400px;
+    }
+    .about-card .about-img img {
+        width: 100%;
+        height: 100%;
+    }
+    div.mar {padding: 3rem 2rem;}
+    .tcardcontainer {
+        flex-wrap: wrap;
+    }
+    .team-card .photo {height: 250px;}
+    .tcardcontainer .team-card {width: 17rem;}
+
+    .interest .int-text h2 {font-size: 1.8rem;}
+
+    .ques {flex-wrap: wrap;}
+    .rev1 .rev-name .nme {font-size: 1.5rem;}
+}
+
+    @media(max-width:620px) {
+        header nav {
+            display: none;
+        }
+        .hero-section h1 {font-size: 2.5rem;}
+        .images .images2 {
+            flex-direction: column;
+            align-items: center;
+        }
+        .images .images1 {
+            flex-direction: column;
+            align-items: center;
+        }
+        .images .gal-img {width: 100%; height: 19rem;}
+        .mar .reviews {
+            flex-direction: column;
+        }
+        .rev1 .rev-name .nme {font-size: 1.42rem;}
+
+        .team-card .photo {height: 280px;}
+        .tcardcontainer .team-card {width: 25rem; }
+        .pro-team .tcardcontainer {
+            gap: 0rem;
+        }
+        .team-card .photo {height: 200px;}
+
+        .interest .int-text h2 {font-size: 1.4rem;}
+        
+        section.foot {padding: 2rem;}
+
+        .same-line {flex-direction: column;}
+    }
+
+@media (max-width:445px) {
+    .hero-section h1 {font-size: 2rem;}
+    /* #org {display: inline;} */
+    .reviews .rev1 {width: 100%;}
+    div.mar {padding: 3rem 2rem; }
+    .mar h2 {font-size: 1.6rem;}
+
+    .about-card .about-img {
+        height: 332px;
+        width: 270px;
+    }
+    body .about-section {padding: 1rem;}
+    .tcardcontainer .team-card {width: 25rem;}
+
+    .about-section .about-card {gap: 0;}
+    .about-card .about-txt {padding-top: 0;}
+    
+    .qcard .span {font-size: 17px;}
+    footer p {font-size: 12px;}
+    .images .gal-img {
+        height: 16rem;
+    }
+}
+ 
+@media(max-width: 280px) {
+    .about-card .about-img {
+        width: 210px;
+        height: 300px;
+    }
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe4c433;
+    padding: 1.8rem;
+}
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+    justify-content: center;
+}
+.about-img {
+    height: 490px;
+    width: 520px;
+}
+.about-img img {
+    height: 100%;
+    width: 100%;
+}
+.about-txt {
+    width: 40%;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    padding-top: 3.7rem;
+}
+.about-txt h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    opacity: 0.86;
+    text-transform: capitalize;
+}
+.p {
+    font-size: 0.97rem;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.service-cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1.6rem 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.dabba {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.4rem;
+    width: 19.9rem;
+    background-color: #ffe4c43f;
+}
+.dabba i {
+    font-size: 2rem;
+    font-weight: 900;
+    color: orange;
+}
+.dabba h3 {
+    font-size: 1.25rem;
+    opacity: 0.87;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+.gal-img {
+    height: 18rem;
+    width: 28rem;
+    position: relative;
+    overflow: hidden;
+}
+.gal-img img {
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out 0.5s;
+}
+.gal-img:hover img {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+.images1, .images2 {
+    display: flex;
+    flex-direction: row;
+}
+.gallery {
+    padding: 1.6rem 0;
+}
+/* .gal-img img:hover {
+    /* transform: scale(1.1);
+    z-index: -1; 
+/* } */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: ease-in-out 0.3s;
+    font-size: 1.1rem;
+    opacity: 0;
+}
+.overlay:hover {
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+}
+
+.mar {
+    background-color: orange;
+    padding: 3rem;
+}
+.reviews {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+}
+.rev1 {
+    /* background-color: orange; */
+    width: 26rem;
+}
+.mar h2 {text-align: start; margin: 0.2rem 0 1.6rem 0;}
+.comment {
+    background-color: white;
+    border-radius: 6px;
+    padding: 1.54rem 1.2rem;
+}
+.comment p {
+    line-height: 1.7;
+    text-align: center;
+    font-size: 0.9689rem;
+}
+.rev-name {
+    color: white;
+    padding-top: 8px;
+}
+.rev-name .nme {
+    font-weight: 400; color: white;
+    font-size: 1.75rem;
+}
+.light{
+    display: block;
+    font-weight: 300;
+    font-size: 0.98rem;
+}
+
+.tcardcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.pro-team {background-color: white;
+    padding-bottom: 3.4rem;
+    }
+.team-card {
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+}
+.photo {
+    height: 310px;
+    /* background-color: cyan; */
+    text-align: center;
+}
+.photo img {
+    height: 100%;
+    border-radius: 50%;
+}
+.ttxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    gap: 0.6rem;
+}
+.ttxt p {line-height: 1.7; font-size: 0.98.7rem; font-weight: 300;}
+.ttxt span {font-weight: 300;}
+.ttxt h4 {font-size: 1.6rem
+    ; font-weight: 400; margin-bottom: 0.2rem;}
+
+
+.interest {
+    background-image: url("https://www.travelandleisure.com/thmb/wsA6EXFuYkqtuJGLbQWw05-cwPs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lake-como-MOSTBEAUTIFUL0921-cb08f3beff1041e4beefc67b5e956b23.jpg");
+    background-position: center center;
+    background-size:cover;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.int-text {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    z-index: 1;
+}
+.int-text h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.int-text p {
+    text-transform: capitalize;
+    margin: 0.99rem;
+    margin-bottom: 1.55rem;
+    opacity: 1;
+}
+.shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.qcard {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    font-size: 1.33rem;
+    align-items: center;
+    font-weight: 600;
+    opacity: 1;
+    gap: 1rem;
+    padding: 1.3rem 1.5rem;
+}
+.icon i {
+    font-size: 2rem;
+    font-weight: 900;
+    color: orange;
+}
+/* .icon i:hover{color: white;} */
+.icon {border: solid orange 1px; padding: 0.7rem 0.85rem; border-radius: 50%; transition: all 0.22s;}
+.icon:hover i{color: rgb(255, 255, 255); transition: all 0.22s;}
+.icon:hover {background-color: orange; transition: all 0.22s;}
+.span {
+  display: flex;  
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+.ques h2 {display: block;}
+.ques {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.foot {padding: 3rem; background-color: #ffe4c433;}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* border: solid red; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* padding: 0.7rem; */
+}
+input, textarea {
+    padding: 0.73rem;
+    font-size: 0.96.5rem;
+    margin-top: 1rem;
+    outline: gray;
+    border: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
+    width: 100%;
+}
+.same-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.input-box {
+    padding: 2.4rem 0;
+}
+.txtar {
+  margin-top: 1.4rem;
+  width: 100%;
+}
+.lst-btn {padding: 0.4rem 0.8rem;
+    font-size: 1.1rem; margin-top: 0.7rem;}
+.lst-btn:hover {
+    color: black;
+}
+.gotop {
+    background-color: rgba(255, 166, 0, 0.938);
+    border-radius: 50%;
+    border: 1px solid;
+    padding: .56rem;
+    color: white;
+    float: right;
+}
+footer {
+    background-color: #0a0a0aec;
+    color: #fff;
+    /* height: 6rem; */
+    padding: 2rem 1.3rem;
+}
+footer p {margin: 0; text-align: center;}
